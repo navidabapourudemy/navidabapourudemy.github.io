@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>WalWay</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="applisalonion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/iconeffects.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<link rel="stylesheet" href="css/swipebox.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/web-font-->
+	<link href='//fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!-- swipe box js -->
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+	</script>
+<!-- //swipe box js -->
+<!--animate-->
+
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+
+</head>
+<body>
+<!--start-home-->
+
+		<div class="banner" id="home">
+		<div class="header-bottom wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s">
+		     <div class="container">
+			  <div class="fixed-header">
+			      <!--logo-->
+			       <div class="logo">
+                      <a href="index.html"><h1>W<span>al</span>W<span>ay</span></h1></a>
+					  <p>اعتماد شما = سرمایه ما</p>
+				   </div>
+					<!--//logo-->
+					<div class="top-menu">
+							<span class="menu"> </span>
+							<nav class="link-effect-4" id="link-effect-4">
+                              <ul>
+								 <li class="active"><a href="index.html">صفحه اصلی</a></li>
+								<li><a  href="#about" class="scroll">درباره ما</a></li>
+								<li><a  href="#services" class="scroll">خدمات</a></li>
+								<li><a  href="https://survey.porsline.ir/s/mK5937A" target="_blank" class="scroll">ثبت نام</a></li>
+							    <li><a  href="./Login/index.html" target="_blank" class="scroll">ورود</a></li>
+							    <li><a  href="#team" class="scroll">مراكز طرف قرارداد</a></li>
+								<li><a  href="#contact" class="scroll">تماس با ما</a></li>
+
+								</ul>
+							</nav>
+							</div>
+							<!-- script-for-menu -->
+								<script>
+									$("span.menu").click(function(){
+										$(".top-menu ul").slideToggle("slow" , function(){
+										});
+									});
+								</script>
+								<!-- script-for-menu -->
+
+				 <div class="clearfix"></div>
+					<script>
+				$(document).ready(function() {
+					 var navoffeset=$(".header-bottom").offset().top;
+					 $(window).scroll(function(){
+						var scrollpos=$(window).scrollTop(); 
+						if(scrollpos >=navoffeset){
+							$(".header-bottom").addClass("fixed");
+						}else{
+							$(".header-bottom").removeClass("fixed");
+						}
+					 });
+					 
+				});
+				</script>
+				<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+			 </div>
+		</div>
+	</div>
+		<div class="banner-slider">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider4">
+					    <li>
+						   <div class="banner-info">
+							      <h3 class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s">به WalWay</h3>
+								  <p class="wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s">خوش آمدید</p>
+								     <div class="arrows wow slideInDown"  data-wow-duration="1s" data-wow-delay=".2s"><img src="images/border.png" alt="border"/></div>
+								 <span class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s">آماده خدمت رسانی به شما</span>
+							  </div>
+						</li>
+						<li>
+						   <div class="banner-info">
+							    <h3 class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s">نگرشی نوین بر</h3>
+								 <p class="wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s">افزایش بهره وری اقتصادی</p>
+								  <div class="arrows wow slideInDown"  data-wow-duration="1s" data-wow-delay=".2s"><img src="images/border.png" alt="border"/></div>
+								 <span class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s">آماده خدمت رسانی به شما</span>
+							  </div>
+						</li>
+					</ul>
+			  </div>
+		<!--banner Slider starts Here-->
+		<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	  	<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager:true,
+			        nav:false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+	      <!--banner Slider starts Here-->
+		 </div>
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+		 <div class="down"><a class="scroll" href="#services"><img src="images/down.png" alt=""></a></div>
+	</div>
+
+<!--/products-->
+<div class="service" id="services">
+	<div class="container">
+		<h3 class="tittle">خدمات ما</h3>
+		<div class="arrows-serve"><img src="images/border.png" alt="border"></div>
+			<div class="inst-grids">
+				<div class="col-md-4 services-gd text-center wow slideInRight"  data-wow-duration="1s" data-wow-delay=".3s">
+					<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+						<a href="#services" class="hi-icon"><img src="images/icon-11.png" alt=" " /></a>
+					</div>
+					<h4>ثبت محل کسب شما</h4>
+					 <p>با ثبت محل کسب خود مشتری های خود را افزایش دهید</p>
+				</div>
+				<div class="col-md-4 services-gd text-center wow slideInDown"  data-wow-duration="1s" data-wow-delay=".2s">
+					<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+						<a href="#services" class="hi-icon"><img src="images/icon-12.png" alt=" " /></a>
+					</div>
+					<h4>ثبت کارت خود به عنوان کارت تخفیف دار </h4>
+					 <p>با ثبت کارت خود از مراکز طرف قرار داد با تخفیف خرید کنید</p>
+				</div>
+				<div class="col-md-4 services-gd text-center wow slideInUp"  data-wow-duration="1s" data-wow-delay=".2s">
+					<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+						<a href="#services" class="hi-icon"><img src="images/icon-13.png" alt=" " /></a>
+					</div>
+					<h4>بازاریابی عناصر اقتصادی خود</h4>
+					 <p>با به اشتراک گذاری عوامل موثّر گذار کسب و کار خود با ما، با افزایش چند برابری مشتریان خود مواجه شوید</p>
+				</div>
+				<div class="clearfix"> </div>		
+			</div>
+
+	</div>
+</div>
+		  <div class="about" id="about">
+		     <div class="container">
+			 <!--/about-section-->
+			  <!--//about-section-->
+			  <!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+			  <!--/about-section2-->
+			   <div class="about-section">
+			        <div class="col-md-5 ab-text two">
+			             <h3 class="tittle wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s">درباره ما</h3>
+						 <div class="arrows-two wow slideInDown"  data-wow-duration="1s" data-wow-delay=".5s"><img src="images/border.png" alt="border"/></div>
+						  <p class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s">فروشگاه اینترنتی وال وی با هدف اعتلای کارآفرینی و فرهنگ فروش اینترنتی در بهار  1400  در  ایران پا به عرصه وجود گذاشته و تمام تلاش و کوشش خود را در اجرای این امر مهم انجام داده و خواهد داد. در این راستا می تواند بسیاری از مشکلات مربوط به بیکاری در نسل جوان را برطرف نموده و اشتغالزایی انجام شود. وال وی یکی از استاندارد ترین و بهترین روش های ارائه کالا و خدمات می باشد و تمامی استانداردها و معیارهای مورد نظر ایرانیان در آن لحاظ گردیده است.</p>
+						 <div class="start wow flipInX"  data-wow-duration="1s" data-wow-delay=".3s">
+						  </div>
+						  <div class="start wow flipInX"  data-wow-duration="1s" data-wow-delay=".3s">
+							<a href="https://survey.porsline.ir/s/mK5937A" target="_blank" class="hvr-bounce-to-bottom">ثبت نام</a>
+						 </div>
+					</div>
+						<div class="col-md-7 ab-right">
+				  <div class="grid">
+			        <div class="h-f  wow slideInLeft"  data-wow-duration="1s" data-wow-delay=".2s">
+					<figure class="effect-jazz">
+					<img src="images/img-1.jpg" alt="img25"/>
+						<figcaption>
+							<h4>WalWay
+							</br>
+								<span>ارائۀ راهکار برای رشد جهشی</span></h4>
+						</figcaption>			
+					</figure>
+					
+				 </div>
+				 <div class="h-f  wow slideInLeft"  data-wow-duration="1s" data-wow-delay=".2s">
+					<figure class="effect-jazz">
+						<img src="images/img-2.jpg" alt="img25"/>
+						<figcaption>
+							<h4>WalWay
+							</br>
+								<span>به اشتراک گذاری گزارش پلّه به پلّه ای از فرآیند</span></h4>
+						</figcaption>			
+					</figure>
+					
+				 </div>
+				 <div class="clearfix"> </div>
+				 </div>
+			   </div>
+					<div class="clearfix"> </div>
+			 </div>
+			  <!--//about-section2-->
+			</div>
+	     </div>
+
+		 <div class="bottom">
+			<div class="container">
+				   <div class="bottom-top">
+					<h3 class=" wow flipInX"  data-wow-duration="1s" data-wow-delay=".3s">بازاریابی ارجاعی</h3>
+					<span>WalWay</span>
+					   <p class="wow slideInDown" data-wow-duration="1s" data-wow-delay=".5s">روش گسترش مشتریان فروشگاه اینترنتی و باشگاه مشتریان ام وی از طریق بازاریابی ارجاعی (Referral Marketing) می باشد و هیچ گونه ارتباطی با بازاریابی شبکه ای ندارد. لازم به ذکر است با تمامی نمایندگان باشگاه که کار را به شکل دیگر انتقال دهند برخورد قاطع خواهد شد.</p>
+					   <div class="start wow flipInX"  data-wow-duration="1s" data-wow-delay=".3s">
+								 <a href="./Login/index.html" target="_blank" class="hvr-bounce-to-bottom">ورود</a>
+							  </div>
+				   </div>
+			</div>
+		</div>
+<!--//products-->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+<!-- service-type-grid -->
+
+<!-- //service-type-grid -->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+ <!--start-services-->
+	<div class="team-section" id="team">
+	 	  <div class="container">
+		  <h3 class="tittle">مراكز طرف قرارداد</h3>
+		  <div class="arrows-serve"><img src="images/border.png" alt="border"></div>
+	 		<div class="box2">
+	 		   <div class="col-md-4 s-1 wow slideInRight" data-wow-duration="1s" data-wow-delay=".3s">
+			   <a href="https://emway.ir/Club/Seller/18382" target="_blank">
+	 		   	<div class="view view-fifth">
+                    <img src="images/tt-1.jpg" alt="chef">
+                    <div class="mask">
+                        <h4>کباب سنتی تک بناب </h4>
+                        <p>آذربایجان شرقی - سراب - میدان آزادی</p>
+                         <p class="p2">ساعت پاسخگویی و سرویس دهی: 10:30 تا 00.30
+						 	</br>
+							</br>
+							 روز های سرویس دهی: کل روز های هفته
+						 </p>
+                     </div>
+				    </div>
+				  </a>
+			
+				</div>
+		<div class="col-md-4 s-2 wow slideInRight" data-wow-duration="1s" data-wow-delay=".3s">
+		<a href="https://emway.ir/Club/Seller/18880" target="_blank">
+	 		   	<div class="view view-fifth">
+                      <img src="images/tt-2.jpg" alt="chef">
+                       <div class="mask">
+                        <h4>قنادی ماه بانو </h4>
+                        <p>آذربایجان شرقی - سراب - چهار راه فردوسی</p>
+                         <p class="p2">ساعت پاسخگویی و سرویس دهی: ۸:۰۰ تا ۲۳:۰۰
+						 	</br>
+							</br>
+							روز های سرویس دهی: کل روز های هفته
+						 </p>
+                     </div>
+               
+				    </div>
+				  </a>
+				
+				</div>
+			  <div class="col-md-4 s-3 wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s">
+			  <a href="https://emway.ir/Club/Seller/15338" target="_blank">
+	 		   	<div class="view view-fifth">
+                     <img src="images/tt-3.jpg" alt="chef">
+                    <div class="mask">
+                        <h4>عینک سازی سانرمو</h4>
+                        <p>آذربایجان شرقی - سراب - چهارراه فردوسی</p>
+                         <p class="p2">ساعت پاسخگویی و سرویس دهی: 9صبح تا 2.5بعدازظهر-4.5 بعداز ظهر تا10 شب
+						 	</br>
+							</br>
+							روز های سرویس دهی: تمامی روزها بجز جمعه ها
+						 </p>
+                     </div>
+                  
+				    </div>
+				  </a>
+
+				</div>
+				<div class="clearfix"></div>
+		     </div>
+	 	    </div>
+	 	</div>
+
+	 <div class="section-contact" id="contact">
+	    <div class="container">
+           <div class="contact-main">
+				    <div class="col-md-12 contact-grid wow fadeInUp"  data-wow-duration="1s" data-wow-delay=".3s">
+					<h3 class="tittle wow bounceIn"  data-wow-duration=".8s" data-wow-delay=".2s">تماس با ما</h3>
+						<div class="arrows-three"><img src="images/border.png" alt="border"></div>
+					   </div>
+					<div class="col-md-12 contact-in wow fadeInUp"  data-wow-duration="1s" data-wow-delay=".5s">
+						<div class="con-top">
+							<h4>شعبۀ مرکزی</h4>
+								<ul>
+								<li>آذربایجان شرقی، سراب</li> 
+								<li>خیابان امام خمینی</li>  
+								<li>کوی جهاد 2</li> 
+								<li>پلاک 9، طبقۀ اوّل، واحد 2</li> 
+								<li>تلفن: 04143234112 - 04143227284</li>
+								<li>شماره تماس: 09146907194 - 09330799690</li>
+								<li>پست الکترونیکی: <a href="mailto:mr.rmahboob@gmail.com"> mr.rmahboob@gmail.com</a></li>
+							  </ul>
+						</div>
+					</div>
+					
+						<div class="clearfix"> </div>
+			      </div>
+				   <!--map-->
+				    <div class="map wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".5s">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786.6199309697354!2d47.5526750292123!3d37.94258329873307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDU2JzMzLjMiTiA0N8KwMzMnMTEuNiJF!5e0!3m2!1sen!2s!4v1625342010383!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				<!--//map-->
+			 </div>
+		</div>
+		<!--//contact-->
+<!--footer-->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+		<div class="footer text-center">
+						<div class="container">
+							<!--logo2-->
+								   <div class="logo2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+									  	<a href="index.html"><h2>W<span>al</span>W<span>ay</span></h2></a>
+									  	<p>اعتماد شما = سرمایه ما</p>
+								   </div>
+								   
+					<!--//logo2-->
+									<img src="./images/ff-1.png" style="height: 110px; width: 90px;">
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="https://irtolid.ir" target="_blank"><img src="./images/ff-2.jpg" style="height: 100px; width: 90px;"></a>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="http://eanjoman.ir" target="_blank"><img src="./images/ff-3.jpg" style="height: 100px; width: 90px;"></a>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="https://ecunion.ir" target="_blank"><img src="./images/ff-4.jpg" style="height: 100px; width: 90px;"></a>
+								</br>
+								</br>
+								</br>
+									<p class="copy-left wow fadeInUp"  data-wow-duration="1s" data-wow-delay=".3s">کلیه حقوق مادی و معنوی برای مجموعه وای وی محفوظ می باشد</p>
+
+					 </div>
+	     </div>
+		<!--start-smooth-scrolling-->
+		<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+								<!--end-smooth-scrolling-->
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+</body>
+</html>
